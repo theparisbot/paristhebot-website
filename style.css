@@ -166,6 +166,24 @@ h2 em{color:var(--purple)}
 .principles h3{margin-bottom:4px}
 .principles p{color:var(--ink-2)}
 
+/* Orchestration */
+.orch{background:var(--ink);color:#FFFFFF}
+.orch .kicker{color:#FF6B78}
+.orch h2 em{color:#B9A0FF}
+.orch-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,90px);align-items:start}
+.orch-copy{display:grid;gap:18px}
+.orch-copy p{color:rgba(255,255,255,.82);font-size:clamp(1.06rem,2vw,1.18rem)}
+.orch-copy .orch-note{color:#FFFFFF;font-weight:600;padding-left:18px;border-left:4px solid var(--red)}
+.motto{margin-top:18px;font-weight:700;color:var(--ink);letter-spacing:-.01em;font-size:clamp(1.05rem,2vw,1.2rem)}
+.logo-title{margin:22px 0 10px!important;line-height:0!important}
+.logo-title img{height:clamp(64px,10vw,92px);width:auto}
+.running{margin-top:18px;font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.trio{margin:26px 0 0;padding:18px 22px;border-radius:14px;background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--purple);display:grid;gap:4px}
+.trio p{margin:0;font-family:var(--display);font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.3;letter-spacing:-.01em;color:var(--ink);font-variation-settings:"opsz" 48}
+.trio p:last-child{color:var(--red);font-style:italic}
+.purpose{margin-top:28px;font-family:var(--display);font-style:italic;font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.35;color:var(--purple);max-width:34ch;font-variation-settings:"opsz" 72}
+.paris .section-intro+.section-intro{margin-top:14px}
+
 /* Hello + privacy */
 .hello{background:var(--band);border-top:1px solid var(--line)}
 .hello-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(36px,6vw,80px);align-items:end}
@@ -192,7 +210,7 @@ h2 em{color:var(--purple)}
 
 /* Tablet and phone */
 @media(max-width:860px){
-  .hero-inner,.story-layout,.paris-grid,.starpaw-inner,.hello-grid{grid-template-columns:minmax(0,1fr)}
+  .hero-inner,.story-layout,.orch-grid,.paris-grid,.starpaw-inner,.hello-grid{grid-template-columns:minmax(0,1fr)}
   .story-head{position:static}
   .moon{width:min(78%,360px)}
   .starpaw-emblem{width:min(62%,240px);order:-1}
