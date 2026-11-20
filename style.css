@@ -164,6 +164,7 @@ h2 em{color:var(--purple)}
 .character img{width:64px;height:64px;border-radius:50%;box-shadow:0 0 0 3px var(--purple),0 0 0 6px rgba(214,40,57,.18)}
 .character span{display:grid;font-weight:800;font-size:1.05rem;line-height:1.2;color:var(--ink)}
 .character small{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:3px}
+.bw{text-transform:none;letter-spacing:.04em}
 .principles{margin-top:36px;display:grid;gap:0;counter-reset:p}
 .principles li{counter-increment:p;display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:8px;padding:20px 0;border-top:1px solid var(--line)}
 .principles li::before{content:counter(p,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-style:italic;color:var(--red);font-size:1.05rem;line-height:1.5}
