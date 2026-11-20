@@ -151,19 +151,16 @@ h2 em{color:var(--lav)}
 .starpaw-copy .kicker::before{display:none}
 .starpaw h2{margin-bottom:22px}
 .starpaw-copy>p{color:var(--mist);margin-top:14px;font-size:1.08rem}
-.paw-constellation{width:min(100%,360px);justify-self:center;overflow:visible}
-.paw-constellation .links path{fill:none;stroke:rgba(211,194,255,.35);stroke-width:1;stroke-dasharray:3 5}
-.paw-constellation .stars circle{fill:var(--moon);filter:drop-shadow(0 0 6px rgba(211,194,255,.9))}
-.paw-constellation .stars circle:nth-child(-n+4){fill:var(--fur);filter:drop-shadow(0 0 7px rgba(233,168,111,.9))}
+.starpaw-emblem{width:min(100%,320px);justify-self:center;filter:drop-shadow(0 0 40px rgba(233,168,111,.35)) drop-shadow(0 24px 40px rgba(0,0,0,.5))}
 
 /* Meet Paris */
 .paris-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,7vw,100px);align-items:center}
-.pixel-paris{position:relative;justify-self:center;width:min(100%,340px);display:grid;justify-items:center;padding:56px 24px 28px;border-radius:28px;background:radial-gradient(70% 60% at 50% 55%,rgba(211,194,255,.22),transparent 70%),var(--card);border:1px solid var(--line)}
-.pixel-paris img{width:min(78%,250px);image-rendering:pixelated;filter:drop-shadow(0 18px 18px rgba(0,0,0,.45));transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.pixel-paris{position:relative;justify-self:center;width:min(100%,340px);display:grid;justify-items:center;padding:56px 24px 28px;border-radius:28px;background:#FFFFFF;color:#1B1430;box-shadow:0 0 0 1px rgba(255,255,255,.6),0 30px 70px -30px rgba(211,194,255,.45)}
+.pixel-paris img{width:min(78%,250px);image-rendering:pixelated;filter:drop-shadow(0 14px 10px rgba(27,20,48,.16));transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
 .pixel-paris:hover img{transform:translateY(-8px) rotate(-2deg)}
-.bubble{position:absolute;top:18px;right:18px;background:var(--moon);color:#1B1430;font-weight:700;font-size:.9rem;padding:8px 14px;border-radius:16px 16px 16px 4px}
+.bubble{position:absolute;top:18px;right:18px;background:#1B1430;color:#FFFFFF;font-weight:700;font-size:.9rem;padding:8px 14px;border-radius:16px 16px 16px 4px}
 .pixel-paris figcaption{margin-top:20px;text-align:center;font-weight:800;letter-spacing:-.01em;display:grid;gap:2px}
-.pixel-paris figcaption span{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--lav)}
+.pixel-paris figcaption span{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#5B3F8C}
 .principles{margin-top:36px;display:grid;gap:0;counter-reset:p}
 .principles li{counter-increment:p;display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:8px;padding:20px 0;border-top:1px solid var(--line)}
 .principles li::before{content:counter(p,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-style:italic;color:var(--fur);font-size:1.05rem;line-height:1.5}
@@ -199,7 +196,7 @@ h2 em{color:var(--lav)}
   .hero-inner,.story-layout,.paris-grid,.starpaw-inner,.hello-grid{grid-template-columns:minmax(0,1fr)}
   .story-head{position:static}
   .moon{width:min(78%,360px)}
-  .paw-constellation{width:min(70%,260px);order:-1}
+  .starpaw-emblem{width:min(62%,240px);order:-1}
   .pixel-paris{order:2}
 }
 @media(max-width:600px){
