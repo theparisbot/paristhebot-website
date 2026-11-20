@@ -160,6 +160,10 @@ h2 em{color:var(--purple)}
 .pixel-paris figcaption{margin-top:20px;text-align:center;font-weight:800;letter-spacing:-.01em;display:grid;gap:6px;color:#111111;justify-items:center}
 .pixel-paris figcaption::before{content:"";width:36px;height:4px;border-radius:2px;background:#D62839;margin-bottom:8px}
 .pixel-paris figcaption span{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#D62839}
+.character{display:inline-flex;align-items:center;gap:16px;padding:10px 22px 10px 10px;margin-bottom:26px;border:1.5px solid var(--line);border-radius:999px;background:var(--bg);box-shadow:0 14px 30px -22px rgba(60,30,120,.45)}
+.character img{width:64px;height:64px;border-radius:50%;box-shadow:0 0 0 3px var(--purple),0 0 0 6px rgba(214,40,57,.18)}
+.character span{display:grid;font-weight:800;font-size:1.05rem;line-height:1.2;color:var(--ink)}
+.character small{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:3px}
 .principles{margin-top:36px;display:grid;gap:0;counter-reset:p}
 .principles li{counter-increment:p;display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:8px;padding:20px 0;border-top:1px solid var(--line)}
 .principles li::before{content:counter(p,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-style:italic;color:var(--red);font-size:1.05rem;line-height:1.5}
