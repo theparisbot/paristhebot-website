@@ -3,7 +3,6 @@
    Fonts are self-hosted (SIL Open Font License), so the site makes no third-party requests. */
 
 @font-face{font-family:"Fraunces";src:url("assets/fonts/fraunces-roman.woff2") format("woff2");font-weight:300 600;font-style:normal;font-display:swap}
-@font-face{font-family:"Fraunces";src:url("assets/fonts/fraunces-italic.woff2") format("woff2");font-weight:300 500;font-style:italic;font-display:swap}
 @font-face{font-family:"DM Sans";src:url("assets/fonts/dmsans.woff2") format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
 
 :root{
@@ -35,7 +34,7 @@ ol{padding:0;list-style:none}
 p{max-width:62ch}
 h1,h2{font-family:var(--display);font-weight:340;line-height:.98;letter-spacing:-.035em;text-wrap:balance;font-variation-settings:"opsz" 144}
 h2{font-size:clamp(2.6rem,7.4vw,5.2rem)}
-h2 em,h1 em{font-style:italic;font-weight:360}
+h1 em,h2 em{font-family:var(--text);font-style:normal;font-weight:600;font-size:.88em;letter-spacing:-.055em;font-variation-settings:normal}
 h3{font-family:var(--text);font-weight:700;font-size:1.12rem;line-height:1.25;letter-spacing:-.01em}
 :focus-visible{outline:3px solid var(--purple);outline-offset:4px;border-radius:4px}
 section{scroll-margin-top:84px}
@@ -101,7 +100,7 @@ section{scroll-margin-top:84px}
 @keyframes orbit{to{transform:rotate(360deg)}}
 .moon figcaption{display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center}
 .label,.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:700;color:var(--ink-3)}
-.moon figcaption strong{font-family:var(--display);font-style:italic;font-weight:400;font-size:clamp(1.02rem,2vw,1.25rem);color:var(--ink);font-variation-settings:"opsz" 72}
+.moon figcaption strong{font-family:var(--text);font-weight:650;font-size:clamp(1.02rem,2vw,1.2rem);color:var(--ink);line-height:1.3}
 
 /* Sections */
 .section{padding-block:clamp(72px,10vw,132px)}
@@ -128,7 +127,7 @@ h2 em{color:var(--purple)}
 .card h3{font-family:var(--display);font-weight:360;font-size:clamp(2.1rem,5vw,3.1rem);letter-spacing:-.035em;line-height:1;margin:22px 0 14px;font-variation-settings:"opsz" 120}
 .card>p{color:var(--ink-2)}
 .card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.num{font-family:var(--display);font-style:italic;color:var(--ink-3);font-size:1.05rem;font-variation-settings:"opsz" 72}
+.num{color:var(--ink-3);font-size:1rem;font-weight:650;font-variant-numeric:tabular-nums}
 .status{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:rgba(214,40,57,.09);color:var(--red);font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .status i{width:7px;height:7px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor}
 .status-early{background:rgba(107,63,212,.09);color:var(--purple)}
@@ -142,7 +141,7 @@ h2 em{color:var(--purple)}
 .feature h3{font-size:clamp(2.8rem,8vw,4.6rem)}
 .feature>p,.feature .role{max-width:60ch}
 .feature .button{align-self:flex-start}
-.tagline{font-family:var(--display);font-style:italic;color:var(--purple)!important;font-size:1.2rem;margin:-6px 0 14px;font-variation-settings:"opsz" 72}
+.tagline{font-family:var(--text);font-weight:650;color:var(--purple)!important;font-size:1.12rem;margin:-6px 0 14px}
 .card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
 
 /* StarPaw */
@@ -171,7 +170,7 @@ h2 em{color:var(--purple)}
 .values-panel>.section-intro{margin-top:8px;line-height:1.5}
 .principles{margin-top:18px;display:grid;gap:0;counter-reset:p}
 .principles li{counter-increment:p;display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:9px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line)}
-.principles li::before{content:counter(p,decimal-leading-zero);grid-row:1;grid-column:1;font-family:var(--display);font-style:italic;color:var(--red);font-size:1.05rem;line-height:1.25}
+.principles li::before{content:counter(p,decimal-leading-zero);grid-row:1;grid-column:1;font-family:var(--text);font-weight:650;font-variant-numeric:tabular-nums;color:var(--red);font-size:1rem;line-height:1.25}
 .principles h4,.principles p{grid-column:2}
 .principles h4{grid-row:1;margin:0;font-size:1.05rem;line-height:1.3}
 .principles p{grid-row:2;margin-top:4px;line-height:1.52;color:var(--ink-2)}
@@ -183,8 +182,8 @@ h2 em{color:var(--purple)}
 .logo-wide img{height:auto;width:min(100%,300px)}
 .trio{margin:26px 0 0;padding:18px 22px;border-radius:14px;background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--purple);display:grid;gap:4px}
 .trio p{margin:0;font-family:var(--display);font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.3;letter-spacing:-.01em;color:var(--ink);font-variation-settings:"opsz" 48}
-.trio p:last-child{color:var(--red);font-style:italic}
-.purpose{margin-top:28px;font-family:var(--display);font-style:italic;font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.35;color:var(--purple);max-width:34ch;font-variation-settings:"opsz" 72}
+.trio p:last-child{color:var(--red);font-family:var(--text);font-weight:650;font-size:clamp(1.05rem,2.4vw,1.3rem);font-variation-settings:normal}
+.purpose{margin-top:28px;font-family:var(--text);font-weight:650;font-size:clamp(1.15rem,2.6vw,1.4rem);line-height:1.4;color:var(--purple);max-width:36ch}
 
 /* Hello + privacy */
 .hello{background:var(--band);border-top:1px solid var(--line)}
