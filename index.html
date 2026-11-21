@@ -237,7 +237,15 @@
 
 <section class="starpaw section" id="starpaw" aria-labelledby="starpaw-title">
   <div class="wrap starpaw-inner">
-    <img class="starpaw-emblem" src="assets/starpaw-emblem.webp" alt="The Project StarPaw emblem: a gold four-point star around a gold paw with a heart-shaped pad on lavender" width="579" height="640" loading="lazy">
+    <svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute">
+      <defs>
+        <filter id="starpaw-edge-clean" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+          <!-- Soften the old dark matte without changing the opaque artwork. -->
+          <feComponentTransfer><feFuncA type="linear" slope="1.818182" intercept="-0.818182"/></feComponentTransfer>
+        </filter>
+      </defs>
+    </svg>
+    <img class="starpaw-emblem" style="filter:url(#starpaw-edge-clean)" src="assets/starpaw-emblem.webp" alt="The Project StarPaw emblem: a gold four-point star around a gold paw with a heart-shaped pad on lavender" width="579" height="640" loading="lazy">
     <div class="starpaw-copy">
       <p class="kicker"><span class="status status-sep"><i aria-hidden="true"></i>A separate charitable mission</span></p>
       <h2 id="starpaw-title">Project StarPaw</h2>
