@@ -170,6 +170,8 @@ h2 em{color:var(--purple)}
 .principles li::before{content:counter(p,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-style:italic;color:var(--red);font-size:1.05rem;line-height:1.5}
 .principles h3{margin-bottom:4px}
 .principles p{color:var(--ink-2)}
+#paws-protocol{margin-top:48px}
+#paws-protocol .principles h4{margin:0 0 4px;font-family:var(--text);font-weight:700;font-size:1.12rem;line-height:1.25;letter-spacing:-.01em}
 
 /* Orchestration */
 .orch{background:var(--ink);color:#FFFFFF}
