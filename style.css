@@ -223,6 +223,8 @@ h2 em{color:var(--purple)}
 }
 @media(max-width:600px){
   body{font-size:1rem}
+  .projects{padding-block-end:20px}
+  .paris{padding-block-start:20px}
   .top-inner{padding-block:12px 4px}
   .top nav{gap:0 14px;width:100%}
   .top nav a{font-size:.88rem}
